@@ -20,9 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-slack-notifier.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-slack-notifier
 
-<!--
-Description here.
--->
+> Slack notifier plugin for egg
 
 ## Install
 
@@ -45,6 +43,9 @@ exports.slackNotifier = {
 ```js
 // {app_root}/config/config.default.js
 exports.slackNotifier = {
+  client: {
+    webhookUri: 'WEBHOOK_URI',
+  },
 };
 ```
 
@@ -52,7 +53,11 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
 
-<!-- example here -->
+```js
+app.slackNotifier.send({ text: 'This is a line of text.\nAnd this is another one.' })
+```
+
+see [punwave-slack-notifier](https://github.com/punwave/punwave-slack-notifier) for more detail.
 
 ## Questions & Suggestions
 
