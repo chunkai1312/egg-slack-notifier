@@ -1,6 +1,6 @@
 {
   "name": "egg-slack-notifier",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "slack notifier plugin for egg",
   "eggPlugin": {
     "name": "slackNotifier"
@@ -8,7 +8,12 @@
   "keywords": [
     "egg",
     "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "slack",
+    "notifier",
+    "notification",
+    "message",
+    "alert"
   ],
   "dependencies": {
     "punwave-slack-notifier": "^0.1.1"
@@ -39,6 +44,7 @@
   "files": [
     "config",
     "app.js",
+    "agent.js",
     "lib"
   ],
   "ci": {
