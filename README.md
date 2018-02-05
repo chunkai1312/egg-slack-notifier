@@ -44,12 +44,14 @@ exports.slackNotifier = {
 // {app_root}/config/config.default.js
 exports.slackNotifier = {
   client: {
-    webhookUri: 'WEBHOOK_URI',
+    webhookURL: 'WEBHOOK_URI',
+    options: {
+      channel: '#general',
+      username: 'webhookbot',
+    },
   },
 };
 ```
-
-see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
 
