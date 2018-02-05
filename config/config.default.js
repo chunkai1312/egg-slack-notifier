@@ -7,6 +7,7 @@
  */
 exports.slackNotifier = {
   client: {
-    webhookUri: '',
+    webhookURL: '',
+    options: {},
   },
 };
